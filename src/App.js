@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Beatch from './Component/Beatch';
+import Bird from './Component/Bird';
+import Food from './Component/Food';
+import Mountain from './Component/Mountain';
+import Navigation from './Component/Navigation';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route exact path='/bird' component={Bird}/>
+          <Route exact path='/food' component={Food}/>
+          <Route exact path='/beatch' component={Beatch}/>
+          <Route exact path='/mountain' component={Mountain}/>
+        </Switch>
+      </Router>
+
   );
 }
 
