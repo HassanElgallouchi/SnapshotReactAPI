@@ -6,6 +6,7 @@ import Moto from './Component/Moto';
 import Bike from './Component/Bike';
 import Plane from './Component/Plane';
 import Navigation from './Component/Navigation';
+import TimeOut from './Component/TimeOut';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/motos' component={Moto}/>
           <Route exact path='/cars' component={Car}/>
           <Route exact path='/planes' component={Plane}/>
+          <Route exact path='/time' component={TimeOut}/>
         </Switch>
       </Router>
 

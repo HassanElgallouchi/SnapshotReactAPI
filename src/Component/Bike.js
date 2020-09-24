@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image';
 
-class Food extends React.Component {
+class Bike extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,4 +35,4 @@ class Food extends React.Component {
   }
 
 }
-export default Food;
+export default Bike;

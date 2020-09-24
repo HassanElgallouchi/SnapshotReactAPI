@@ -44,3 +44,29 @@ a {
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
+
+/********* Loading **********/
+
+/* common */
+.loading {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.loading01 span {
+    animation: loading01 1s infinite alternate;
+    -webkit-animation: loading01 1s infinite alternate;
+}
+@keyframes loading01 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+

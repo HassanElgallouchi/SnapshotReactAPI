@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image';
 
-class Beatch extends React.Component {
+class Moto extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,4 +35,4 @@ class Beatch extends React.Component {
   }
 
 }
-export default Beatch;
+export default Moto;
