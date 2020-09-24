@@ -3,7 +3,7 @@ import React from 'react';
 function Image (props) {
     return (
         <div>
-            <img key={i} src={image.urls.raw} />
+            <img src={props.src} alt="test alt" />
         </div>
     );
 }

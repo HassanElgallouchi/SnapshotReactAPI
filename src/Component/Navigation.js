@@ -7,10 +7,10 @@ class Navigation extends React.Component {
     return (
       <nav>
         <ul>
-          <li><Link to='/food'>Food</Link></li>
-          <li><Link to='/bird'>Bird</Link></li>
-          <li><Link to='/beatch'>Beatch</Link></li>
-          <li><Link to='/mountain'>Montain</Link></li>
+          <li><Link to='/cars'>Cars</Link></li>
+          <li><Link to='/bikes'>Bikes</Link></li>
+          <li><Link to='/motos'>Motos</Link></li>
+          <li><Link to='/planes'>Planes</Link></li>
         </ul>
       </nav>
     );
