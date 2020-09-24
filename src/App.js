@@ -10,8 +10,6 @@ import TimeOut from './Component/TimeOut';
 
 function App() {
   return (
-
-
       <Router>
         <Navigation />
         <Switch>
@@ -20,6 +18,7 @@ function App() {
           <Route exact path='/cars' component={Car}/>
           <Route exact path='/planes' component={Plane}/>
           <Route exact path='/time' component={TimeOut}/>
+          <Route component={() => {return <h3>Page Not Found !</h3>}} />
         </Switch>
       </Router>
 

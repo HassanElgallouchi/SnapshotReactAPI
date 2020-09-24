@@ -11,7 +11,6 @@ class Car extends React.Component {
     }
   }
 
-  
   componentDidMount() {
     
     fetch("https://api.unsplash.com/search/photos/?client_id=52vo-k71t0yruLyvJmuMU88qbAvQnSAlJ3L3QIlXU78&query=car&per_page=12")
@@ -33,7 +32,6 @@ class Car extends React.Component {
         {
           this.state.loading ? <Loading /> : 
         <div className="images">
-          {/* {this.state.images} */}
           {this.state.cars.map((image, i) => {
             return (
               <Image key={i} src={image.urls.raw} />
